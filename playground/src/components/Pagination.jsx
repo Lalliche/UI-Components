@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div className="flex items-center justify-between w-full  py-3 text-[0.9em] font-medium">
+    <div className="flex items-center justify-between w-full px-4  py-3 text-[0.9em] font-medium">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1 || totalPages === 0}
